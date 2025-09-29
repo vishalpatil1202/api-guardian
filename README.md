@@ -148,7 +148,7 @@ api-guardian/
    ```bash
    python ai_monitor.py
    ```
-   - Continuously monitors /hello endpoint via Kong
+   - Continuously monitors `/hello` endpoint via Kong
    - Logs timestamp, status, latency, predicted latency, anomaly flags
 
 5. **Start Dashboard**
