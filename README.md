@@ -10,11 +10,11 @@ API Guardian is an AI-driven monitoring system that observes the `/hello` endpoi
 
 This project monitors APIs behind Kong Gateway. Key features:
 
-✅ Continuous monitoring of API endpoints
-✅ Latency prediction using AI (Prophet)
-✅ Anomaly detection for latency spikes and error rate
-✅ Real-time visualization via Streamlit dashboard
-✅ Stores metrics in a local SQLite database for persistence
+- Continuous monitoring of API endpoints
+- Latency prediction using AI (Prophet)
+- Anomaly detection for latency spikes and error rate
+- Real-time visualization via Streamlit dashboard
+- Stores metrics in a local SQLite database for persistence
 
 The system acts like an **AI agent** by autonomously observing endpoints, predicting expected metrics, and highlighting anomalies.
 
