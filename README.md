@@ -73,23 +73,27 @@ api-guardian/
    Make sure your Spring Boot app is running on port `8080` and exposes `/hello` endpoint:
 
    ```bash
-   ./mvnw spring-boot:run
+   cd api-guardian/spring-app
+   mvn spring-boot:run
 
-2. **Run Kong Gateway**
-   Start Kong (Docker example):
-
+2. **Start all services**
+  
     ```bash
-    docker run -d --name kong \
-    -e KONG_DATABASE=off \
-    -e KONG_PROXY_ACCESS_LOG=/dev/stdout \
-    -e KONG_ADMIN_ACCESS_LOG=/dev/stdout \
-    -e KONG_PROXY_ERROR_LOG=/dev/stderr \
-    -e KONG_ADMIN_ERROR_LOG=/dev/stderr \
-    -e KONG_ADMIN_LISTEN=0.0.0.0:8001 \
-    -p 8000:8000 \
-    -p 8001:8001 \
-    kong:latest
-   
+    docker-compose up -d
+
+3. **Check running containers**
+
+   ```bash
+    docker ps
+
+   You should see something like:
+   | Container  | Port(s)    |
+   | ---------- | ---------- |
+   | kong       | 8000, 8001 |
+   | spring-app | 8080       |
+   | postgres   | 5432       |
+
+
 3. **Add Service & Route in Kong**
     
     ```bash
