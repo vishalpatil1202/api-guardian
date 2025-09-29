@@ -25,7 +25,7 @@ The system acts like an **AI agent** by autonomously observing endpoints, predic
 - **Python 3.10**
 - **Kong API Gateway** (proxy management)
 - **SQLite** (metrics storage)
-- **Prophet** (latency prediction)
+- **Prophet Time-Series Forecasting Model** (latency prediction)
 - **Pandas** (data manipulation)
 - **Streamlit + Altair** (dashboard visualization)
 - **Requests** (API checks)
