@@ -6,7 +6,7 @@ import altair as alt
 
 DB_NAME = "metrics.db"
 
-# 📥 Load metrics data
+# Load metrics data
 def load_data():
     conn = sqlite3.connect(DB_NAME)
     df = pd.read_sql_query("SELECT * FROM metrics ORDER BY timestamp ASC", conn)
