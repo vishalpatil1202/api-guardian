@@ -1,8 +1,8 @@
-# 🌐 API Guardian
-
-**AI-Based API Monitoring and Anomaly Detection Dashboard**
+# 🌐 API Guardian - AI-Based Latency Prediction and Anomaly Detection
 
 API Guardian is an AI-driven monitoring system that observes the `/hello` endpoint of a Spring Boot application behind Kong API Gateway. It predicts latency, detects anomalies, and provides a real-time dashboard for visualization.
+
+**This project is submitted as part of [Kong-quer the Agentic AI hackthon 2025](https://konghq.com/events/conferences/api-summit/hackathon)**
 
 ---
 
@@ -67,7 +67,7 @@ api-guardian/
 
 ---
 
-## 🚀 Local Setup with Kong
+## ⚙️ Local Setup with Kong
 
 1. **Run Spring Boot Application**  
    Make sure your Spring Boot app is running on port `8080` and exposes `/hello` endpoint:
@@ -85,8 +85,10 @@ api-guardian/
 
    ```bash
     docker ps
+   ```
 
    You should see something like:
+   
    | Container  | Port(s)    |
    | ---------- | ---------- |
    | kong       | 8000, 8001 |
@@ -110,12 +112,19 @@ api-guardian/
    
 4. **Test the Kong proxy**
     
-    ```bash
-   curl http://localhost:8000/hello
+     ```bash
+    curl http://localhost:8000/hello
+    ```
+    If everything is working, you should get the Spring app’s response, e.g.:
+    ```
+    {
+    "message": "Hello from Spring App!"
+    }
+    ```
    
 ---
 
-## ⚙️ Setup & Running Locally
+## 🚀 Setup & Running Locally
 
 1. **Clone the repo**
     
@@ -134,21 +143,23 @@ api-guardian/
    python init_db.py
 
 4. **Start AI Monitoring Agent**
+   
+   ```bash
+   python ai_monitor.py
+   ```
    - Continuously monitors /hello endpoint via Kong
    - Logs timestamp, status, latency, predicted latency, anomaly flags
 
-    ```bash
-   python ai_monitor.py
-
 5. **Start Dashboard**
+   
+   ```bash
+   pip install -r requirements.txt
+   ```
    - Displays latency (actual vs predicted)
    - Shows anomaly rate over time
    - Shows latest check summary
    - Auto-refresh interval can be adjusted from the sidebar
 
-    ```bash
-   pip install -r requirements.txt   
-   
 ---
 
 ## 🧠 How AI Works
@@ -168,7 +179,7 @@ api-guardian/
 
 ---
 
-## **Future Improvements**
+## Future Improvements
 
 - Add Slack/Email alerting for anomalies
 - Extend to multiple endpoints automatically
