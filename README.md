@@ -10,14 +10,8 @@ API Guardian is an AI-driven monitoring system that observes the `/hello` endpoi
 
 This project monitors APIs behind Kong Gateway. Key features:
 
-✅ Multilingual UI (supports 9 Indian languages)  
-✅ Dynamic form for farmer details  
-✅ Streamlit-based frontend  
-✅ Colab notebook for reproducibility  
-✅ Uses Gemma LLM to recommend real-world applicable schemes
-
-✅ Continuous monitoring of API endpoints
-✅ Latency prediction using AI (Prophet)
+✅ Continuous monitoring of API endpoints 
+✅ Latency prediction using AI (Prophet) 
 ✅ Anomaly detection for latency spikes and error rate
 ✅ Real-time visualization via Streamlit dashboard
 ✅ Stores metrics in a local SQLite database for persistence
