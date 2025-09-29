@@ -154,7 +154,7 @@ api-guardian/
 5. **Start Dashboard**
    
    ```bash
-   pip install -r requirements.txt
+   streamlit run dashboard.py
    ```
    - Displays latency (actual vs predicted)
    - Shows anomaly rate over time
