@@ -179,7 +179,7 @@ api-guardian/
 
 ---
 
-## Future Improvements
+## ✨ Future Improvements
 
 - Add Slack/Email alerting for anomalies
 - Extend to multiple endpoints automatically
