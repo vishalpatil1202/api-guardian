@@ -37,31 +37,31 @@ The system acts like an **AI agent** by autonomously observing endpoints, predic
 ```
 
 api-guardian/
-├── .idea/                       # IntelliJ IDEA project settings
-├── spring-app/                  # Spring Boot microservice
-│   ├── pom.xml                  # Maven project configuration
-│   ├── Dockerfile               # Builds Docker image for Spring Boot API service
+├── .idea/                                               # IntelliJ IDEA project settings
+├── spring-app/                                          # Spring Boot microservice
+│   ├── pom.xml                                          # Maven project configuration
+│   ├── Dockerfile                                       # Builds Docker image for Spring Boot API service
 │   └── src/
 │       └── main/
 │           ├── java/
 │           │   └── com/
 │           │       └── example/
 │           │           └── demo/
-│           │               ├── Application.java          # Spring Boot main class
-│           │               └── HelloController.java      # REST controller (/hello)
+│           │               ├── Application.java         # Spring Boot main class
+│           │               └── HelloController.java     # REST controller (/hello)
 │           └── resources/
-│               ├── application.properties                # Spring Boot config
-├── .gitignore                   # Git ignore rules
-├── README.md                    # Project documentation
-├── ai_monitor.py                # ML model monitoring (Prophet for anomaly detection)
-├── api-guardian.iml             # IntelliJ module file
-├── dashboard.py                 # Streamlit dashboard for monitoring results
-├── docker-compose.yml           # Multi-service Docker setup
-├── endpoint_logs.csv            # API request logs (CSV format)
-├── init_db.py                   # Script to initialize SQLite databases
-├── metrics.db                   # SQLite database for metrics
-├── monitoring.db                # SQLite database for monitoring/anomaly detection
-└── requirements.txt             # Python dependencies
+│               ├── application.properties               # Spring Boot config
+├── .gitignore                                           # Git ignore rules
+├── README.md                                            # Project documentation
+├── ai_monitor.py                                        # ML model monitoring (Prophet for anomaly detection)
+├── api-guardian.iml                                     # IntelliJ module file
+├── dashboard.py                                         # Streamlit dashboard for monitoring results
+├── docker-compose.yml                                   # Multi-service Docker setup
+├── endpoint_logs.csv                                    # API request logs (CSV format)
+├── init_db.py                                           # Script to initialize SQLite databases
+├── metrics.db                                           # SQLite database for metrics
+├── monitoring.db                                        # SQLite database for monitoring/anomaly detection
+└── requirements.txt                                     # Python dependencies
 
 ```
 
