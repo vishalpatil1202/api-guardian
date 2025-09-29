@@ -1,4 +1,4 @@
-# 🌐 API Guardian - AI-Based Latency Prediction and Anomaly Detection
+# 🌐 API Guardian - AI Based Latency Prediction and Anomaly Detection
 
 API Guardian is an AI-driven monitoring system that observes the `/hello` endpoint of a Spring Boot application behind Kong API Gateway. It predicts latency, detects anomalies, and provides a real-time dashboard for visualization.
 
