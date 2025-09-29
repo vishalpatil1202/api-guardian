@@ -6,21 +6,21 @@ API Guardian is an AI-driven monitoring system that observes the `/hello` endpoi
 
 ---
 
-## **Project Overview**
+## 🎯 Project Overview
 
 This project monitors APIs behind Kong Gateway. Key features:
 
-- Continuous monitoring of API endpoints
-- Latency prediction using AI (Prophet)
-- Anomaly detection for latency spikes and error rate
-- Real-time visualization via Streamlit dashboard
-- Stores metrics in a local SQLite database for persistence
+✅ Continuous monitoring of API endpoints
+✅ Latency prediction using AI (Prophet)
+✅ Anomaly detection for latency spikes and error rate
+✅ Real-time visualization via Streamlit dashboard
+✅ Stores metrics in a local SQLite database for persistence
 
 The system acts like an **AI agent** by autonomously observing endpoints, predicting expected metrics, and highlighting anomalies.
 
 ---
 
-## **Tech Stack**
+## 🛠️ Tech Stack
 
 - **Python 3.10**
 - **Kong API Gateway** (proxy management)
@@ -32,7 +32,23 @@ The system acts like an **AI agent** by autonomously observing endpoints, predic
 
 ---
 
-## **Local Setup with Kong**
+## 📂 Project Structure
+
+```
+
+api-guardian/
+├── app.py # Streamlit frontend
+├── gemma.py # Gemma model loading and response generation
+├── requirements.txt # Dependencies
+├── AgroSathi.ipynb # Google colab notebook
+├── .gitignore
+└── README.md
+
+```
+
+---
+
+## 🚀 Local Setup with Kong
 
 1. **Run Spring Boot Application**  
    Make sure your Spring Boot app is running on port `8080` and exposes `/hello` endpoint:
@@ -76,7 +92,7 @@ The system acts like an **AI agent** by autonomously observing endpoints, predic
    
 ---
 
-## **Setup & Running Locally**
+## ⚙️ Setup & Running Locally
 
 1. **Clone the repo**
     
@@ -112,7 +128,7 @@ The system acts like an **AI agent** by autonomously observing endpoints, predic
    
 ---
 
-## **How AI Works**
+## 🧠 How AI Works
 
 1. **Latency Prediction**
     - Uses Prophet time series model to forecast expected latency for the next API call.
