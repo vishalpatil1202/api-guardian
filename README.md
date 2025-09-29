@@ -73,6 +73,7 @@ api-guardian/
    Make sure your Spring Boot app is running on port `8080` and exposes `/hello` endpoint:
 
    ```bash
+   git clone https://github.com/vishalpatil1202/api-guardian
    cd api-guardian/spring-app
    mvn spring-boot:run
 
