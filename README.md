@@ -2,7 +2,7 @@
 
 API Guardian is an AI-driven monitoring system that observes the `/hello` endpoint of a Spring Boot application behind Kong API Gateway. It predicts latency, detects anomalies, and provides a real-time dashboard for visualization.
 
-**This project is submitted as part of [Kong-quer the Agentic AI hackthon 2025](https://konghq.com/events/conferences/api-summit/hackathon)**
+**This project is submitted as part of [Kong-quer the Agentic AI hackathon 2025](https://konghq.com/events/conferences/api-summit/hackathon)**
 
 ---
 
