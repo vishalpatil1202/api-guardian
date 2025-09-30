@@ -186,6 +186,9 @@ api-guardian/
 - Extend to multiple endpoints automatically
 - Predict error rates per endpoint
 
+## ▶️ Demo Video 
+🔗 https://youtu.be/KaR9GYVg6fI?si=l6urezDB3G8h5Mh3
+
 
   
 
